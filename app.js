@@ -18,11 +18,11 @@ btn_search.addEventListener("click", () => {
 
 let data;
 async function fetchData() {
-    let apiUrl = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=yes`;
+    let apiUrl = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=yes`;
     try {
         let response = await fetch(apiUrl);
         data = await response.json();
-        console.log(data);
+        console.log("API ====>>"+data);
         console.log(data.location.name + " this is location ");
         console.log(data.location.localtime + " this is date ");
         console.log(data.current.temp_c + " this is wheather ");
@@ -35,7 +35,7 @@ async function fetchData() {
         dp_date.innerHTML = "Date :" + data.location.localtime;
         dp_div.classList.add('shadow');
     } catch (error) {
-        console.error("Error fetching data:", error);
+        console.log("Error fetching data: ====>>>>", error);
         dp_loc.innerHTML = "Error";
         dp_div.classList.add('none');
         dp_wheather.innerHTML = "Error";
