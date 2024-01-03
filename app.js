@@ -46,3 +46,18 @@ async function fetchData() {
 
     }
 }
+document.onkeydown = function (e) {
+    if (e.ctrlKey && e.keyCode === 85) {
+        return false;
+    }
+};
+document.addEventListener("contextmenu", function (event) {
+    // Prevent the default context menu
+    event.preventDefault();
+});
+document.addEventListener("keydown", function (e) {
+    // Check if Ctrl + Shift + I is pressed
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+        e.preventDefault();
+    }
+});
