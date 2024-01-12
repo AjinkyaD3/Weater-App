@@ -13,7 +13,7 @@ A simple web application to check the current weather conditions for a specific 
 ![Weather App Preview](https://raw.githubusercontent.com/AjinkyaD3/Wheater-App/master/path/to/screenshot.png)
 
 ## How to Use
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
+1. Clone the repository: `git clone https://github.com/AjinkyaD3/Wheater-App.git`
 2. Open the `index.html` file in a web browser.
 3. Enter the desired city name and click the search button.
 
