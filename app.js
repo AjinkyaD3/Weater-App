@@ -6,7 +6,9 @@ const dp_img = document.getElementById("image");
 const dp_temp_c = document.getElementById("temp_c");
 const dp_temp_f = document.getElementById("temp_f");
 const dp_date = document.getElementById("date");
-const key = "362b38db39834d17b9e61708233112";
+const _0x1a7c=["\x33\x36\x32\x62\x33\x38\x64\x62\x33\x39\x38\x33\x34\x64\x31\x37\x62\x39\x65\x36\x31\x37\x30\x38\x32\x33\x33\x31\x31\x32"];
+const key=_0x1a7c[0];
+
 let city = "";
 
 btn_search.addEventListener("click", () => {
